@@ -22,9 +22,16 @@
  */
 public class BinaryTreeMaxDepth {
 
-    public int maxDepth(TreeNode root) {
+    /**
+     * 递归
+     * @param root
+     * @return
+     */
+    public int maxDepth1(TreeNode root) {
 
         return root == null ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
 
     }
+
+    
 }
